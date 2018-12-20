@@ -15,3 +15,6 @@ PROMPT_COMMAND=color_prompt
 
 # mitmproxy
 alias mitmproxy='mitmproxy --set console_focus_follow=true'
+
+# git
+test -f ~/.git-completion.bash && . $_
