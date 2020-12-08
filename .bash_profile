@@ -1,3 +1,5 @@
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # ls customization
 alias ls='ls -FGhl'
 export CLICOLOR=1
