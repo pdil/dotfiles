@@ -11,8 +11,8 @@ function git_branch {
     git branch 2> /dev/null | sed -e '/^[^[*]/d' -e 's/\(.*\)/(\1)/'
 }
 
-PROMPT='%F{201}[%*] %B%F{14}%n%b%F{10}@%F{9}%M:%B%F{11}%1~%b %F{0}%K{10}$(git_branch)%k
-%B%F{15}→%f%b '
+PROMPT='%B%F{161}[%*] %F{39}%n%F{47}@%F{205}%M:%F{214}%1~ %F{0}%K{47}$(git_branch)%k
+%F{15}→%f%b '
 
 # git
 zstyle ':completion:*:*:git:*' script ~/.git-completion.bash
