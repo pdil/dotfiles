@@ -13,5 +13,8 @@ cp _git ~/.zsh/functions/_git
 rm git-completion.bash
 rm _git
 
+# set defaults
+defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
+
 # finish
 echo "Done."
