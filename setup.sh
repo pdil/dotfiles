@@ -16,5 +16,8 @@ rm _git
 # set defaults
 defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
 
+# enable Touch ID for sudo
+sh scripts/enable_tid_sudo.sh
+
 # finish
 echo "Done."
