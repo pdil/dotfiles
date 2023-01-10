@@ -18,3 +18,8 @@ PROMPT='%B%F{161}[%*] %F{39}%n%F{47}@%F{205}%M:%F{214}%1~ %F{0}%K{47}$(git_branc
 zstyle ':completion:*:*:git:*' script ~/.git-completion.bash
 fpath=(~/.zsh/functions $fpath)
 autoload -Uz compinit && compinit
+
+# view man pages in Preview
+preman() {
+    mandoc -T pdf "$(/usr/bin/man -w $@)" | open -fa Preview
+}
