@@ -23,3 +23,9 @@ autoload -Uz compinit && compinit
 preman() {
     mandoc -T pdf "$(/usr/bin/man -w $@)" | open -fa Preview
 }
+
+# open simulator directory for bundle ID provided by $1
+simdir() {
+	export DIR=$(xcrun simctl get_app_container booted "$1" data)
+	open $DIR
+}
