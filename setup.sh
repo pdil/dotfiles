@@ -24,5 +24,8 @@ defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandle
 #### enable Touch ID for sudo
 sh scripts/enable_tid_sudo.sh
 
+#### install Homebrew packages
+sh scripts/homebrew.sh
+
 #### finish
 echo "Done."
