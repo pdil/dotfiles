@@ -3,6 +3,9 @@
 # show build duration in Xcode
 defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
 
+# show single touches in Xcode Simulator
+defaults write com.apple.iphonesimulator ShowSingleTouches YES
+
 # allow Cmd+Ctrl+Click drag gesture anywhere on windows
 defaults write -g NSWindowShouldDragOnGesture -bool YES
 
