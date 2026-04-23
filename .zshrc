@@ -29,3 +29,6 @@ simdir() {
 	export DIR=$(xcrun simctl get_app_container booted "$1" data)
 	open $DIR
 }
+
+# do not track
+export DO_NOT_TRACK=true
